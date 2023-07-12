@@ -1,4 +1,10 @@
 
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
 
 body{
     background: rgb(107, 165, 241);
