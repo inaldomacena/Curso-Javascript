@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    Qual a sua nacionalidade? <input type="text" name="nomepais" id="nomepais">
+    <input type = "button" value = "Verificar" onclick = "calcular()">
+    <div id="resultado">
+        <p>Resultado</p>
+    </div>
+    <script>
+        
+        function verificar(){
+            var nome = window.document.querySelector('input#nomepais')
+            var resultado = window.document.querySelector('div#resultado')
+            var nacionalidade = (nomepais.value).tolowercase()
+            
+            if(nacionalidade == 'Brasil'){
+                resultado.innerHTML =  `<p> Sua nacionalidade é ${nacionalidade} voce é brasileiro. </p>`
+            }else{
+
+            resultado.innerHTML = `<p> Seu país é ${nacionalidade}, voce é estrangeiro. </p>`
+        }
+
+    }    
+    </script>
+</body>
+</html>
